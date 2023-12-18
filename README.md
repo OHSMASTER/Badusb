@@ -15,7 +15,8 @@ The script has been developed to be fully compatible with ABNT and ABNT2 keyboar
 1. **Script Preparation:** Write the entire content of the script in the `script.ps1` file.
 2. **Conversion to Base64:** Use the `convert.ps1` script to convert the content of `script.ps1` into Base64.
 3. **Insertion into Arduino:** Copy the generated Base64 text and paste it into the `.ino` file of the Arduino at the line corresponding to the command:
-    ```arduino
+
+    ```bash
     Command("powershell -EncodedCommand [your_base64_here]");
     ```
 
